@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;500&display=swap');
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+}
+
+body {
+    background-color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    gap: 1.5rem;
+}
+
+footer {
+    padding: 20px;
+    background-color:  black;
+    color: #FFFFFF;
+}
+
+.box {
+    box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #00779b;
+}
+
+.sosmed li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #FFFAFF;
+}
+
+.sosmed li a:hover {
+    color: #ffb703;
+}
+
+a {
+    text-decoration: none;
+    color: #FFFAFF;
+}
+
+a:hover {
+    font-weight: bold;
+    color: #ffb703;
+    transition: all .3s ease-in-out;
+}
+
+nav {
+    padding: 0;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+figure {
+    text-align: center;
+}
+
+#konten {
+    display: flex;
+    flex: 7;
+    flex-flow: column nowrap;
+    gap: 1rem 3rem;
+}
+
+nav ul {
+    display: flex;
+    gap: 4rem;
+    font-size: 40;
+    margin-left: 5px;
+}
+
+h1 {
+    padding-left: 3rem;
+}
+
+#gallery div {
+    text-align: center;
+    padding: 0px;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.sosmed ul {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-direction: row;
+}
+
+.image {
+    padding: 5;
+    text-align: center;
+}
+
+.lecturer {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-width: 160px;
+    max-height: 190px;
+    border-radius: 5px;
+}
+
+.flyer img {
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 10px;
+}
+
+.flyer {
+    width: 350px;
+    align-self: center;
+}
+
+.about {
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #00779b;
+}
+
+.mobile {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+}
+h3{
+    text-align: center;
+}
+
+.imga {
+    max-height: 250px;
+}
+.banner {
+	background-color:#00779b;
+	padding:150px 0;
+}
+section {
+	padding:50px 0;
+}
+.banner img {
+	width: 200px;
+	border-radius: 10px;
+	box-shadow: 0 3px 5px #ddd;
+	margin-bottom: 10px;
+}
+.banner span {
+	color: #fff;
+}
+.banner h2 {
+	margin-bottom: 10px;
+}
+.banner p {
+	font-size: 18px;
+}
+.banner-left {
+	padding-left:24px;
+}
+
+@media screen and (max-width: 1450px) {
+    main {
+        flex-flow: column nowrap;
+    }
+
+    main aside {
+        align-self: center;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .flex-container {
+        flex-flow: column;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    .official {
+        flex-direction: column;
+        gap: 0;
+    }
+}
